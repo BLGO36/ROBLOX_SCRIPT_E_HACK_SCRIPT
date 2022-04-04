@@ -1,0 +1,457 @@
+local ROBLOXSCRIPT_E = Instance.new("ScreenGui")
+local MAIN = Instance.new("Frame")
+local LABEL = Instance.new("TextLabel")
+local MAINTEXT = Instance.new("TextLabel")
+local LINE = Instance.new("TextLabel")
+local RESET = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local SPEED = Instance.new("TextButton")
+local JUMP = Instance.new("TextButton")
+local CLIKTP = Instance.new("TextButton")
+local FLY = Instance.new("TextButton")
+local TOTP = Instance.new("TextButton")
+local PLAYERNAME = Instance.new("TextBox")
+local FLYCAR = Instance.new("TextButton")
+local AIMBOT = Instance.new("TextButton")
+local LINE_2 = Instance.new("TextLabel")
+
+ROBLOXSCRIPT_E.Name = "ROBLOX SCRIPT_E"
+ROBLOXSCRIPT_E.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ROBLOXSCRIPT_E.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MAIN.Name = "MAIN"
+MAIN.Parent = ROBLOXSCRIPT_E
+MAIN.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MAIN.BorderColor3 = Color3.fromRGB(255, 255, 255)
+MAIN.Position = UDim2.new(0.400651455, 0, 0.428571403, 0)
+MAIN.Size = UDim2.new(0, 447, 0, 250)
+MAIN.Draggable = true
+MAIN.Selectable = true
+MAIN.Active = true
+
+LABEL.Name = "LABEL"
+LABEL.Parent = MAIN
+LABEL.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+LABEL.BorderColor3 = Color3.fromRGB(255, 255, 255)
+LABEL.Position = UDim2.new(0.00200009602, 0, 0.00200000009, 0)
+LABEL.Size = UDim2.new(0, 446, 0, 26)
+LABEL.Font = Enum.Font.SourceSans
+LABEL.Text = " ROBLOX SCRIPT_E"
+LABEL.TextColor3 = Color3.fromRGB(255, 255, 255)
+LABEL.TextSize = 14.000
+LABEL.TextWrapped = true
+
+MAINTEXT.Name = "MAINTEXT"
+MAINTEXT.Parent = MAIN
+MAINTEXT.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MAINTEXT.BorderColor3 = Color3.fromRGB(255, 255, 255)
+MAINTEXT.Position = UDim2.new(0.0156599544, 0, 0.148000002, 0)
+MAINTEXT.Size = UDim2.new(0, 111, 0, 36)
+MAINTEXT.Font = Enum.Font.SourceSans
+MAINTEXT.Text = "MAIN"
+MAINTEXT.TextColor3 = Color3.fromRGB(255, 255, 255)
+MAINTEXT.TextSize = 14.000
+
+LINE.Name = "LINE"
+LINE.Parent = MAIN
+LINE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LINE.BorderColor3 = Color3.fromRGB(255, 255, 255)
+LINE.Position = UDim2.new(0.281879187, 0, 0.109999999, 0)
+LINE.Size = UDim2.new(0, 0, 0, 222)
+LINE.Font = Enum.Font.SourceSans
+LINE.Text = ""
+LINE.TextColor3 = Color3.fromRGB(0, 0, 0)
+LINE.TextSize = 14.000
+
+RESET.Name = "RESET"
+RESET.Parent = MAIN
+RESET.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RESET.BorderColor3 = Color3.fromRGB(255, 255, 255)
+RESET.Position = UDim2.new(0.281879187, 0, 0.874000013, 0)
+RESET.Size = UDim2.new(0, 321, 0, 31)
+RESET.Font = Enum.Font.SourceSans
+RESET.Text = "RESET"
+RESET.TextColor3 = Color3.fromRGB(255, 255, 255)
+RESET.TextSize = 14.000
+
+ScrollingFrame.Parent = MAIN
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.Position = UDim2.new(0.281879187, 0, 0.108000003, 0)
+ScrollingFrame.Size = UDim2.new(0, 320, 0, 191)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 1, 0)
+
+SPEED.Name = "SPEED"
+SPEED.Parent = ScrollingFrame
+SPEED.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SPEED.BorderColor3 = Color3.fromRGB(255, 255, 255)
+SPEED.Position = UDim2.new(-0.00166833401, 0, 0.0371398143, 0)
+SPEED.Size = UDim2.new(0, 309, 0, 31)
+SPEED.Font = Enum.Font.SourceSans
+SPEED.Text = "SPEED"
+SPEED.TextColor3 = Color3.fromRGB(255, 255, 255)
+SPEED.TextSize = 14.000
+
+JUMP.Name = "JUMP"
+JUMP.Parent = ScrollingFrame
+JUMP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+JUMP.BorderColor3 = Color3.fromRGB(255, 255, 255)
+JUMP.Position = UDim2.new(-0.00785992108, 0, 0.16026023, 0)
+JUMP.Size = UDim2.new(0, 309, 0, 31)
+JUMP.Font = Enum.Font.SourceSans
+JUMP.Text = "JUMP"
+JUMP.TextColor3 = Color3.fromRGB(255, 255, 255)
+JUMP.TextSize = 14.000
+
+CLIKTP.Name = "CLIKTP"
+CLIKTP.Parent = ScrollingFrame
+CLIKTP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CLIKTP.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CLIKTP.Position = UDim2.new(-0.00473492127, 0, 0.280448705, 0)
+CLIKTP.Size = UDim2.new(0, 309, 0, 31)
+CLIKTP.Font = Enum.Font.SourceSans
+CLIKTP.Text = "CLIK TP"
+CLIKTP.TextColor3 = Color3.fromRGB(255, 255, 255)
+CLIKTP.TextSize = 14.000
+
+FLY.Name = "FLY"
+FLY.Parent = ScrollingFrame
+FLY.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FLY.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FLY.Position = UDim2.new(-0.00160018727, 0, 0.403736651, 0)
+FLY.Size = UDim2.new(0, 309, 0, 31)
+FLY.Font = Enum.Font.SourceSans
+FLY.Text = "FLY"
+FLY.TextColor3 = Color3.fromRGB(255, 255, 255)
+FLY.TextSize = 14.000
+
+TOTP.Name = "TOTP"
+TOTP.Parent = ScrollingFrame
+TOTP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TOTP.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TOTP.Position = UDim2.new(-0.00160992146, 0, 0.526396394, 0)
+TOTP.Size = UDim2.new(0, 309, 0, 31)
+TOTP.Font = Enum.Font.SourceSans
+TOTP.Text = "TO TP"
+TOTP.TextColor3 = Color3.fromRGB(255, 255, 255)
+TOTP.TextSize = 14.000
+
+PLAYERNAME.Name = "PLAYERNAME"
+PLAYERNAME.Parent = ScrollingFrame
+PLAYERNAME.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PLAYERNAME.BorderColor3 = Color3.fromRGB(255, 255, 255)
+PLAYERNAME.Position = UDim2.new(-0.00625000009, 0, 0.64777267, 0)
+PLAYERNAME.Size = UDim2.new(0, 309, 0, 27)
+PLAYERNAME.Font = Enum.Font.SourceSans
+PLAYERNAME.Text = "PLAYER NAME"
+PLAYERNAME.TextColor3 = Color3.fromRGB(255, 255, 255)
+PLAYERNAME.TextSize = 14.000
+
+FLYCAR.Name = "FLYCAR"
+FLYCAR.Parent = ScrollingFrame
+FLYCAR.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FLYCAR.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FLYCAR.Position = UDim2.new(-0.00160018727, 0, 0.755736589, 0)
+FLYCAR.Size = UDim2.new(0, 309, 0, 31)
+FLYCAR.Font = Enum.Font.SourceSans
+FLYCAR.Text = "FLY CAR"
+FLYCAR.TextColor3 = Color3.fromRGB(255, 255, 255)
+FLYCAR.TextSize = 14.000
+
+AIMBOT.Name = "AIMBOT"
+AIMBOT.Parent = ScrollingFrame
+AIMBOT.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AIMBOT.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AIMBOT.Position = UDim2.new(-0.00160018727, 0, 0.879736543, 0)
+AIMBOT.Size = UDim2.new(0, 309, 0, 31)
+AIMBOT.Font = Enum.Font.SourceSans
+AIMBOT.Text = "AIMBOT"
+AIMBOT.TextColor3 = Color3.fromRGB(255, 255, 255)
+AIMBOT.TextSize = 14.000
+
+LINE_2.Name = "LINE"
+LINE_2.Parent = MAIN
+LINE_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LINE_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+LINE_2.Position = UDim2.new(0, 0, 0.108000003, 0)
+LINE_2.Size = UDim2.new(0, 447, 0, 0)
+LINE_2.Font = Enum.Font.SourceSans
+LINE_2.Text = ""
+LINE_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+LINE_2.TextSize = 14.000
+
+SPEED.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end)
+
+JUMP.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
+end)
+
+FLY.MouseButton1Click:Connect(function()
+	repeat wait() 
+	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+	local mouse = game.Players.LocalPlayer:GetMouse() 
+	repeat wait() until mouse
+	local plr = game.Players.LocalPlayer 
+	local torso = plr.Character.Head 
+	local flying = false
+	local deb = true 
+	local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local maxspeed = 400 
+	local speed = 5000 
+
+	function Fly() 
+		local bg = Instance.new("BodyGyro", torso) 
+		bg.P = 9e4 
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+		bg.cframe = torso.CFrame 
+		local bv = Instance.new("BodyVelocity", torso) 
+		bv.velocity = Vector3.new(0,0.1,0) 
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+		repeat wait() 
+			plr.Character.Humanoid.PlatformStand = true 
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+				speed = speed+.5+(speed/maxspeed) 
+				if speed > maxspeed then 
+					speed = maxspeed 
+				end 
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+				speed = speed-1 
+				if speed < 0 then 
+					speed = 0 
+				end 
+			end 
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+			else 
+				bv.velocity = Vector3.new(0,0.1,0) 
+			end 
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+		until not flying 
+		ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		speed = 0 
+		bg:Destroy() 
+		bv:Destroy() 
+		plr.Character.Humanoid.PlatformStand = false 
+	end 
+	mouse.KeyDown:connect(function(key) 
+		if key:lower() == "f" then 
+			if flying then flying = false 
+			else 
+				flying = true 
+				Fly() 
+			end 
+		elseif key:lower() == "w" then 
+			ctrl.f = 1 
+		elseif key:lower() == "s" then 
+			ctrl.b = -1 
+		elseif key:lower() == "a" then 
+			ctrl.l = -1 
+		elseif key:lower() == "d" then 
+			ctrl.r = 1 
+		end 
+	end) 
+	mouse.KeyUp:connect(function(key) 
+		if key:lower() == "w" then 
+			ctrl.f = 0 
+		elseif key:lower() == "s" then 
+			ctrl.b = 0 
+		elseif key:lower() == "a" then 
+			ctrl.l = 0 
+		elseif key:lower() == "d" then 
+			ctrl.r = 0 
+		end 
+	end)
+	Fly()
+	FLY.Text = "LOADED!"
+	FLY.TextColor3 = Color3.fromRGB(255, 255, 255)
+	wait(2)
+	FLY.TextColor3 = Color3.fromRGB(255, 255, 255)
+	FLY.Text = "FLY"
+end)
+
+CLIKTP.MouseButton1Click:Connect(function()
+	mouse = game.Players.LocalPlayer:GetMouse()
+	tool = Instance.new("Tool")
+	tool.RequiresHandle = false
+	tool.Name = "SCRIPT_E"
+	tool.Activated:connect(function()
+		local pos = mouse.Hit+Vector3.new(0,2.5,0)
+		pos = CFrame.new(pos.X,pos.Y,pos.Z)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+	end)
+	tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+TOTP.MouseButton1Click:Connect(function()
+	local Victim = PLAYERNAME.Text
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[Victim].Character.HumanoidRootPart.CFrame
+	TOTP.Text = "TELEPORT!"
+	TOTP.TextColor3 = Color3.fromRGB(0, 255, 50)
+	wait(2)
+	TOTP.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TOTP.Text = "TOTP"
+end)
+
+RESET.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+
+FLYCAR.MouseButton1Down:connect(function()
+repeat wait()
+until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
+local mouse = game.Players.LocalPlayer:GetMouse()
+repeat wait() until mouse
+local plr = game.Players.LocalPlayer
+local torso = plr.Character.Torso
+local flying = true
+local deb = true
+local ctrl = {f = 0, b = 0, l = 0, r = 0}
+local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+local maxspeed = 500
+local speed = 0
+
+function Fly()
+	local bg = Instance.new("BodyGyro", torso)
+	bg.P = 9e4
+	bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+	bg.cframe = torso.CFrame
+	local bv = Instance.new("BodyVelocity", torso)
+	bv.velocity = Vector3.new(0,0.1,0)
+	bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+	repeat wait()
+		plr.Character.Humanoid.PlatformStand = false
+		if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+			speed = speed+125.0+(speed/maxspeed)
+			if speed > maxspeed then
+				speed = maxspeed
+			end
+		elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+			speed = speed-250
+			if speed < 0 then
+				speed = 0
+			end
+		end
+		if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+			bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+			lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+		elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+			bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+		else
+			bv.velocity = Vector3.new(0,0.1,0)
+		end
+		bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+	until not flying
+	ctrl = {f = 0, b = 0, l = 0, r = 0}
+	lastctrl = {f = 0, b = 0, l = 0, r = 0}
+	speed = 0
+	bg:Destroy()
+	bv:Destroy()
+	plr.Character.Humanoid.PlatformStand = false
+end
+mouse.KeyDown:connect(function(key)
+	if key:lower() == "z" then
+		if flying then flying = false
+		else
+			flying = true
+			Fly()
+		end
+	elseif key:lower() == "w" then
+		ctrl.f = 1
+	elseif key:lower() == "s" then
+		ctrl.b = -1
+	elseif key:lower() == "a" then
+		ctrl.l = -1
+	elseif key:lower() == "d" then
+		ctrl.r = 1
+	end
+end)
+mouse.KeyUp:connect(function(key)
+	if key:lower() == "w" then
+		ctrl.f = 0
+	elseif key:lower() == "s" then
+		ctrl.b = 0
+	elseif key:lower() == "a" then
+		ctrl.l = 0
+	elseif key:lower() == "d" then
+		ctrl.r = 0
+	end
+end)
+Fly()
+end)
+
+AIMBOT.MouseButton1Down:connect(function()
+	local function PNHLOYF_fake_script() -- Toggle.LocalScript 
+		local script = Instance.new('LocalScript', AIMBOT)
+
+		_G.aimbot = false
+		local camera = game.Workspace.CurrentCamera
+		local localplayer = game:GetService("Players").LocalPlayer
+
+		script.Parent.MouseButton1Click:Connect(function()
+			if _G.aimbot == false then
+				_G.aimbot = true
+				script.Parent.TextColor3 = Color3.fromRGB(0,170,0)
+				script.Parent.Text = "On"
+				function closestplayer()
+					local dist = math.huge -- math.huge means a really large number, 1M+.
+					local target = nil --- nil means no value
+					for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+						if v ~= localplayer then
+							if v.Character and v.Character:FindFirstChild("Head") and _G.aimbot and v.Character.Humanoid.Health > 0 then --- creating the checks
+								local magnitude = (v.Character.Head.Position - localplayer.Character.Head.Position).magnitude
+								if magnitude < dist then
+									dist = magnitude
+									target = v
+								end
+
+							end
+						end
+					end
+					return target
+				end
+
+			else
+				_G.aimbot = false
+				script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+				script.Parent.Text = "AIMBOT"
+			end
+		end)
+
+		local settings = {
+			keybind = Enum.UserInputType.MouseButton2
+		}
+
+		local UIS = game:GetService("UserInputService")
+		local aiming = false --- this toggle will make it so we lock on to the person when we press our keybind
+
+		UIS.InputBegan:Connect(function(inp)
+			if inp.UserInputType == settings.keybind then
+				aiming = true
+			end
+		end)
+
+		UIS.InputEnded:Connect(function(inp)
+			if inp.UserInputType == settings.keybind then ---- when we stop pressing the keybind it would unlock off the player
+				aiming = false
+			end
+		end)
+
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if aiming then
+				camera.CFrame = CFrame.new(camera.CFrame.Position,closestplayer().Character.Head.Position) -- locks into the HEAD
+			end
+		end)
+	end
+	coroutine.wrap(PNHLOYF_fake_script)()
+	
+end)
+
+
